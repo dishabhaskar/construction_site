@@ -1,0 +1,72 @@
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+
+}
+#logo-img {
+    background: url('../images/logo-large.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+  }
+.navbar-brand h1{
+    font-size: 1.5em;
+}
+.navbar-brand {
+    padding: 25px 0 0 15px;
+}
+.login-header{
+    height: 25%;
+    width: 100%;
+    background-color: #6CADDF;
+    padding: 15px 0 50px 0;
+}
+.login{
+    width: 50%;
+    height: 50%;
+    padding: 25px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 1px 1px 10px #888888;
+}
+.login h3{
+    text-align: center;
+}
+.login .form-group{
+    margin: 10px 0 10px;
+    width: 100%;
+}
+.login button{
+    width: 100%;
+    margin-top: 15px;
+    background-color: #4d6585;
+    
+}
+.bg-img{
+    background: url('../images/background-6CADDF.png') repeat-x;
+    width: 100%;
+    height: 100px;
+    float: left;
+    position: absolute;
+    z-index: -1;
+}
+/********** Devices with max-width 1199px **********/
+@media (max-width: 1199px){
+    /* Header */
+  #logo-img {
+        background: url('../images/logo-medium.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+  .navbar-brand {
+        padding-top: 15px;
+    }
+  /* End Header */
+}
