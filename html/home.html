@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheet/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Pinnacle Contructions</title>
 </head>
 
@@ -28,6 +28,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <hr class="horizontal-rule d-md-block d-lg-none">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Our Projects</a>
@@ -38,39 +39,41 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Cost Estimater</a>
                         </li>
-                        <div class="service-dropdown">
-                            <li class="nav-item">
-                                <a class="nav-link float-left" id="service-btn" href="#">Services</a>
-                                <svg width="1em" height="1em" viewBox="0 0 16 16"
-                                    class="bi bi-caret-down-fill float-left" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                                </svg>
-                            </li>
-                            <div id="empty-div"></div>
-                            <div class="service-dropdown-contents">
-                                <a href="#" class="nav-link">Carpetery</a>
-                                <a href="#" class="nav-link">Electrical</a>
-                                <a href="#" class="nav-link">Flooring</a>
+                        <li class="nav-item dropdown d-lg-none d-xl-block" id="serviceDropdownDiv">
+                            <a class="nav-link dropdown-toggle" id="serviceDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" id="serviceDropdownContents" aria-labelledby="serviceDropdown">
+                                <a href="#" class="dropdown-item">Carpetery</a>
+                                <a href="#" class="dropdown-item">Electrical</a>
+                                <a href="#" class="dropdown-item">Flooring</a>
                             </div>
-                        </div>
-                        <li class="nav-item">
+                        </li>
+                        <li class="nav-item d-lg-none d-xl-block">
                             <a class="nav-link" href="#">How It Works</a>
                         </li>
+                        <li class="nav-item dropdown d-none d-lg-block d-xl-none" id="moreDropdownDiv">
+                            <a href="#" id="moreDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                            <div class="dropdown-menu" id="moreDropdownContents" aria-labelledby="moreDropdown">
+                                <a href="#" class="dropdown-item">Carpetery</a>
+                                <a href="#" class="dropdown-item">Electrical</a>
+                                <a href="#" class="dropdown-item">Flooring</a>
+                                <a href="#" class="dropdown-item">How it works</a>
+                            </div>
+                        </li>
                     </ul>
-                    <button type="button" class="btn btn-primary nav-item float-right">Lets Build</button>
-                    <div class="vertical-rule"></div>
-                    <a href="tel:+99999999">
-                        <div class="call-icon float-left">
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill"
-                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
-                            </svg>
-                        </div>
-                    </a>
-                    <span class="tele-number float-right">+91 99999 99999</span>
+                    <div class="d-none d-lg-block">
+                        <button type="button" class="btn btn-primary nav-item float-left">Lets Build</button>
+                        <div class="vertical-rule float-left"></div>
+                        <a href="tel:+99999999">
+                            <div class="call-icon float-left">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                                </svg>
+                            </div>
+                        </a>
+                        <span class="tele-number float-left">+91 99999 99999</span>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -83,30 +86,32 @@
     <footer>
         <div class="container">
             <div class="row">
-                <section class="col-lg-4">
+                <section class="col-lg-4 col-md-6" id="siteNav">
                     <h5>Site Nav</h5>
-                    <ul class="">
-                        <li ><a href="#">Cost Estimater</a></li>
-                        <li ><a href="#">Carpetery</a></li>
-                        <li ><a href="#">Electrical</a></li>
-                        <li ><a href="#">Flooring</a></li>
+                    <ul>
+                        <li><a href="#">Cost Estimater</a></li>
+                        <li><a href="#">Carpetery</a></li>
+                        <li><a href="#">Electrical</a></li>
+                        <li><a href="#">Flooring</a></li>
                     </ul>
+                    <hr class="horizontal-rule d-md-block d-lg-none">
                 </section>
-                <section class="col-lg-4">
+                <section class="col-lg-4 col-md-6" id="infoFooter">
                     <h5>Information</h5>
-                    <ul class="">
-                        <li ><a href="#">Why Us</a></li>
-                        <li ><a href="#">How it works</a></li>
+                    <ul>
+                        <li><a href="#">Why Us</a></li>
+                        <li><a href="#">How it works</a></li>
                     </ul>
+                    <hr class="horizontal-rule d-md-block d-lg-none">
                 </section>
-                <section class="col-lg-4">
-                    <ul class="">
+                <section class="col-lg-4 col-md-6" id="aboutUs">
+                    <ul>
                         <h5>About Us</h5>
-                        <li ><a href="#">Our Projects</a></li>
-                        <li >Email : example@abcd.com</li>
-                        <li >Contact Hour: 9:00-16:00 IST</li>
-                        <li >Address : #123,abcd,efgh-560009</li>
-                        <li >Phone : <a href="tel:+919999999999">+91 99999 99999</a></span>
+                        <li><a href="#">Our Projects</a></li>
+                        <li>Email : example@abcd.com</li>
+                        <li>Contact Hour: 9:00-16:00 IST</li>
+                        <li>Address : #123,abcd,efgh-560009</li>
+                        <li>Phone : <a href="tel:+919999999999">+91 99999 99999</a></span>
                     </ul>
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-twitter"></a>
@@ -120,5 +125,4 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../javascript/script.js"></script>
 </body>
-
 </html>
