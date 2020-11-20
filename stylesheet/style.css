@@ -59,7 +59,7 @@ a:hover{
 }
 .collapse button{
     z-index: 1;
-    box-shadow:1px 1px 10px #888888 ;
+    box-shadow:0 1px 10px rgba(0,0,0,.25 ) ;
     background-color: #0082e6;
 }
 .collapse button:hover{
@@ -81,7 +81,7 @@ a:hover{
     background-color: #000000;
     border-radius: 50%;
     z-index: 1;
-    box-shadow:1px 1px 10px #888888 ;
+    box-shadow:1px 1px 10px rgba(0,0,0,.25 ) ;
 }
 .tele-number{
     padding-top: 5px;
@@ -130,6 +130,130 @@ footer section .horizontal-rule{
     background-color: #808080;
 }
 /** End Footer  **/
+/**Home Page**/    
+
+.main-content .container-lg .jumbotron,.main-content .container-lg{
+    padding:0;
+}
+.jumbotron{
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.jumbotron .container .tag{
+    position: absolute;
+    top: 30%;
+    font-size: 4em;
+}
+.jumbotron .container .accomp{
+    position: absolute;
+    bottom: 15px;
+    font-size: 1.5em;
+}
+.jumbotron .container button{
+    position: absolute;
+    bottom: 15px;
+    right: 5%;
+    box-shadow:0 1px 10px rgba(0,0,0,.25 );
+}
+.jumbotron .container button:hover{
+    z-index: 100;
+    box-shadow:none;
+}
+.blue-background{
+    background-color: #edf5fc;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.blue-background .container #slide-show{
+    padding-top: 30px;
+    
+}
+.carousel-item .card{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    box-shadow:0 5px 5px rgba(0,0,0,.25 );
+    z-index: 100;
+}
+.carousel-item .card:hover{
+    box-shadow: none;
+}
+.carousel-item .card .card-body{
+    padding: 0;
+}
+.carousel-item .card .card-body span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+/**CSS copied from https://www.codeply.com/go/EIOtI7nkP8/bootstrap-carousel-with-multiple-cards**/
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+/* display 4 */
+@media (min-width: 992px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+/**End of Css Copy**/
+#why-us-home{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+#why-us-home .row .card{
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+/**End Home Page**/
 /**Login Page**/
 .login-header{
     height: 25%;
@@ -145,7 +269,7 @@ footer section .horizontal-rule{
     border-radius: 5px;
     background-color: white;
     z-index: 3;
-    box-shadow: 1px 1px 10px #888888;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.25);
 }
 .login h3{
     text-align: center;
@@ -169,9 +293,27 @@ footer section .horizontal-rule{
     z-index: -1;
 }
 /**Login Page End**/
-
+/********** Devices with max-width 1500px **********/
+@media (min-width:1200px){
+    /**Home Page**/    
+    .jumbotron .container .tag{
+        padding-left: 30px;
+        top: 20%;
+    }
+    .jumbotron .container .accomp{
+        padding-left: 30px;
+        bottom: 20%;
+        font-size: 2em;
+    }
+    .jumbotron .container button{
+        bottom: 20%;
+        right:10%;
+        width: 20%;
+    }
+    /**End Home Page**/
+}
 /********** Devices with max-width 1199px **********/
-@media (max-width: 1199px){
+@media (min-width:992px) and (max-width: 1199px){
     /* Header */
     /** NavBar**/
     .nav-item{
@@ -179,6 +321,23 @@ footer section .horizontal-rule{
     }
     /** End NavBar**/
     /* End Header */
+    /**Home Page**/    
+    .jumbotron .container .tag{
+        padding-left: 30px;
+        top: 20%;
+    }
+    .jumbotron .container .accomp{
+        padding-left: 30px;
+        bottom: 15%;
+        font-size: 2em;
+    }
+    .jumbotron .container button{
+        bottom: 15%;
+        right:10%;
+        width: 15%;
+    }
+
+    /**End Home Page**/
     /** Footer  **/
     
     /** End Footer  **/
@@ -191,6 +350,19 @@ footer section .horizontal-rule{
         margin-right: -24px;
     }
     /** End NavBar**/
+    /**Home Page**/    
+    .jumbotron .container .tag{
+        font-size: 3em;
+    }
+    .jumbotron .container .accomp{
+        bottom: 10%;
+        font-size: 2em;
+    }
+    .jumbotron .container button{
+        bottom: 10%;
+        right:10%;
+    }
+    /**End Home Page**/
     /** Footer  **/
     footer section .horizontal-rule{
         margin-left: 0;
@@ -208,6 +380,23 @@ footer section .horizontal-rule{
     }
 
     /** End NavBar**/
+    /**Home Page**/    
+    .jumbotron .container .tag{
+        top: 33%;
+        font-size: 2em;
+    }
+    .carousel-item .col-md-4{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #why-us-home .row .card{
+        width: 60%;
+        height: 250px;
+        margin:30px auto 0;
+        
+    }
+    /**End Home Page**/
     
     /** Footer  **/
     footer{
@@ -232,4 +421,14 @@ footer section .horizontal-rule{
         margin-right: 0;
     }
     /** End NavBar**/
+    /**Home Page**/    
+    .jumbotron .container .accomp{
+        bottom: 10%;
+        font-size: 1.5em;
+    }
+    .jumbotron .container button{
+        bottom: 10%;
+        right:10%;
+    }
+    /**End Home Page**/
 }
