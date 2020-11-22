@@ -254,6 +254,30 @@ footer section .horizontal-rule{
     box-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
 /**End Home Page**/
+/**Our Projects**/
+#our-projects .card{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+#our-projects .card .card-body{
+    padding:10px;
+}
+#our-projects .card .card-body hr{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#our-projects .main-content{
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+#our-projects .main-content .row{
+    margin-top: 30px;
+}
+#our-projects .main-content .row p{
+    margin-bottom: 0;
+}
+/**End Our Project**/
 /**Login Page**/
 .login-header{
     height: 25%;
