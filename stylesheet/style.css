@@ -445,14 +445,113 @@ footer section .horizontal-rule{
         margin-right: 0;
     }
     /** End NavBar**/
-    /**Home Page**/    
-    .jumbotron .container .accomp{
-        bottom: 10%;
-        font-size: 1.5em;
-    }
-    .jumbotron .container button{
-        bottom: 10%;
-        right:10%;
-    }
-    /**End Home Page**/
 }
+
+/**How it works**/
+.rise ul li
+{
+    
+    font-size:30px;
+    list-style-type:square;
+    color: #0069d9;
+    line-height: 2px;
+}
+
+.rise ul h1
+{
+    color: black;
+    font-size: 30px;
+
+} 
+.imgm
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.ptm
+{
+    padding-top: 30px;
+}
+.ptm ul 
+{
+    list-style: square;
+    color: #0069d9;
+}
+.ptm ul li p
+{
+    color: black;
+}
+.c1
+{
+    position: absolute;
+    top: 50%;
+}
+.ort .ort1
+{
+    background-color:#0069d9;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    margin-bottom:30px;
+}
+.ort .ort1 h1
+{
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+.tpor
+{
+    margin-top: 80px;
+}
+.bull
+{
+    border: 2px solid #0069d9;
+    padding:1px 3px 1px 3px;
+    border-radius: 100px;
+
+}
+header
+{
+    position: sticky !important;
+}
+@media(max-width:993px)
+{
+    .ptm ul li
+    {
+        text-align:center;
+    }
+
+}
+.ort .ort1
+{
+    border-radius: 10px;
+}
+.imgontxt
+{
+    padding-left: 80px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    position: static;
+    
+}
+.imgontxt p
+{
+    font-size: 70px;
+    font-family:'Castoro', serif;
+}
+.imgontxt h6
+{
+   font-size: 25px;
+}
+/**How it works Ends**/
+/**Home Page**/    
+.jumbotron .container .accomp{
+    bottom: 10%;
+    font-size: 1.5em;
+}
+.jumbotron .container button{
+    bottom: 10%;
+    right:10%;
+}
+/**End Home Page**/
