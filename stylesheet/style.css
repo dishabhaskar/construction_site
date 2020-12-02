@@ -617,3 +617,41 @@ header
     right:10%;
 }
 /**End Home Page**/
+/**Why Us Page**/
+#why-us .container-flex{
+    position: relative;
+}
+
+#why-us .container-flex .container #why-us-header{
+    position: absolute;
+    bottom: 10px;
+    color: #ffffff;
+}
+#why-us .card-main-div{
+    margin:30px auto 0;
+}
+#why-us .card-main-div .card{
+    border-radius: 10px;
+    padding: 20px;
+}
+#why-us .card-main-div .card-title{
+    padding: 20px;
+    margin: 0;
+}
+#why-us .card-main-div .card-image{
+    text-align: center;
+}
+#why-us .card-main-div .card-image img{
+    width: 100px;
+    height: 100px;
+}
+#why-us .card-main-div .card-body{
+    padding-left: 0;
+}
+#why-us .container{
+    margin-bottom: 30px;
+}
+#why-us .card ul{
+    list-style-type: square;
+}
+/**Why Us Page Ends**/
