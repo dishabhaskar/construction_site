@@ -336,45 +336,54 @@ footer section .horizontal-rule{
     margin-bottom: 0;
 }
 /**End Our Project**/
-/**Login Page**/
+/**Login Page &&& Sign Up Page**/
 .login-header{
     height: 25%;
     width: 100%;
     background-color: #6CADDF;
     padding: 15px 0 50px 0;
 }
-.login{
-    width: 50%;
+#login .main-content,#sign-up .main-content{
+    width: 40%;
     height: 50%;
     padding: 25px;
     margin: 10px auto;
     border-radius: 5px;
     background-color: white;
+    position: relative;
     z-index: 3;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.25);
 }
-.login h3{
+#login .main-content h3,#sign-up .main-content h3{
     text-align: center;
 }
-.login .form-group{
+#login .main-content .form-group,#sign-up .main-content .form-group{
     margin: 10px 0 10px;
     width: 100%;
 }
-.login button{
+#login .main-content button,#sign-up .main-content button{
     width: 100%;
     margin-top: 15px;
-    background-color: #4d6585;
-    
+    background-color: #0082e6;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+#login .main-content button:hover,#sign-up .main-content button:hover{
+    background-color: #0069d9;
+    box-shadow: none;
 }
 .bg-img{
-    background: url('../images/background-6CADDF.png') repeat-x;
+    background-color: #6CADDF ;
     width: 100%;
     height: 100px;
-    float: left;
     position: absolute;
     z-index: -1;
 }
-/**Login Page End**/
+#sign-up .main-content{
+    width: 60%;
+}
+/**Login Page End &&& Sign Up Page End**/
 /********** Devices with max-width 1500px **********/
 @media (min-width:1200px){
     /**Home Page**/    
@@ -393,6 +402,9 @@ footer section .horizontal-rule{
         width: 20%;
     }
     /**End Home Page**/
+    /**Login Page &&& Sign Up Page**/
+    
+    /**Login Page End &&& Sign Up Page End**/
 }
 /********** Devices with max-width 1199px **********/
 @media (min-width:992px) and (max-width: 1199px){
@@ -420,6 +432,11 @@ footer section .horizontal-rule{
     }
 
     /**End Home Page**/
+    /**Login Page &&& Sign Up Page**/
+    #login .main-content{
+        width: 50%;
+    }
+    /**Login Page End &&& Sign Up Page End**/
     /** Footer  **/
     
     /** End Footer  **/
@@ -445,6 +462,14 @@ footer section .horizontal-rule{
         right:10%;
     }
     /**End Home Page**/
+    /**Login Page &&& Sign Up Page**/
+    #login .main-content{
+        width: 60%;
+    }
+    #sign-up .main-content{
+        width: 80%;
+    }
+    /**Login Page End &&& Sign Up Page End**/
     /** Footer  **/
     footer section .horizontal-rule{
         margin-left: 0;
@@ -483,6 +508,11 @@ footer section .horizontal-rule{
         margin:30px auto 0; 
     }
     /**End Home Page**/
+    /**Login Page &&& Sign Up Page**/
+    #login .main-content,#sign-up .main-content{
+        width: 100%;
+    }
+    /**Login Page End &&& Sign Up Page End**/
     
     /** Footer  **/
     footer{
