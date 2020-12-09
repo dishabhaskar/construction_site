@@ -112,8 +112,8 @@
         <div id="form-container" class="container">
             <!--Main Content of any page comes here-->
             <div id="form-main">
-            <h4>Fill the details to approximate the cost of construction</h4>
-            <span>Please enter the Length in Ft.</span>
+            <h4 id="cost-heading">Fill the details to approximate the cost of construction</h4>
+            <span id="dim-input-note">Please enter the Length in Ft.</span>
             <form id="cost-form"class="row" action="none">
                 <div class="col-md-6">
                   <div class="cost-input">
@@ -158,7 +158,7 @@
             </div>
             <div id="result" class="col-md-9 blue-background">
                 <h3>Cost Approximate</h3><br>
-                <h5>Rs.<span id="cost"> 100000-200000</span>*</h5><br>
+                <h5>Rs.<span id="cost"></span>*</h5><br>
                 <span  class="">*Please note that this a approxiation.For more detailed cost click Here!</span><br>
                 <button type="button" class="btn btn-primary">
                     Lets Build

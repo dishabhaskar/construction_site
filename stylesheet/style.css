@@ -30,6 +30,16 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 /**General input end**/
+/**General Button**/
+.btn-primary{
+    border-radius: 0px;
+    box-shadow:5px 5px 3px rgba(0,0,0,.25 )  ;
+    padding: .375rem 1.5rem;
+}
+.btn-primary:hover{
+    box-shadow:none ;
+}
+/**General Button Ends**/
 /**NavBar Start**/
 header{
     position: relative;
@@ -79,14 +89,6 @@ header{
 }
 #serviceDropdownDiv:hover #serviceDropdownContents,#moreDropdownDiv:hover #moreDropdownContents{
     display: block;
-}
-.collapse button{
-    z-index: 1;
-    box-shadow:0 1px 10px rgba(0,0,0,.25 ) ;
-    background-color: #0082e6;
-}
-.collapse button:hover{
-    box-shadow: none;
 }
 .bi-telephone-fill{
     color:#ffffff;
@@ -173,18 +175,13 @@ footer section .horizontal-rule{
 }
 .jumbotron .container .accomp{
     position: absolute;
-    bottom: 15px;
+    bottom: 10%;
     font-size: 1.5em;
 }
 .jumbotron .container button{
     position: absolute;
-    bottom: 15px;
-    right: 5%;
-    box-shadow:0 1px 10px rgba(0,0,0,.25 );
-}
-.jumbotron .container button:hover{
-    z-index: 100;
-    box-shadow:none;
+    bottom: 10%;
+    right:10%;
 }
 .blue-background{
     background-color: #edf5fc;
@@ -489,12 +486,21 @@ footer section .horizontal-rule{
     margin-top: 15px;
 }
 #cost-estimator #result{
+    display: none;
     padding: 30px;
     margin:15px auto;
     text-align: center;
     position: relative;
     z-index: 2;
     box-shadow: 2px 2px 2px  rgba(0,0,0,.25 );
+}
+#cost-estimator #cost-heading{
+    margin-bottom: 0;
+}
+#cost-estimator #dim-input-note{
+    font-style: italic;
+    color: #808080;
+    font-size: 14px;
 }
 /**Cost Estimator Page End**/
 
@@ -751,16 +757,6 @@ header
    font-size: 25px;
 }
 /**How it works Ends**/
-/**Home Page**/    
-.jumbotron .container .accomp{
-    bottom: 10%;
-    font-size: 1.5em;
-}
-.jumbotron .container button{
-    bottom: 10%;
-    right:10%;
-}
-/**End Home Page**/
 /**Why Us Page**/
 #why-us .container-flex{
     position: relative;
