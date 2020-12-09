@@ -1,6 +1,7 @@
 /** General- Apply for entire body**/
 *{
     font-family: 'Ubuntu', sans-serif;
+    
 }
 a{
     text-decoration: none;
@@ -15,6 +16,20 @@ a:hover{
     z-index: 1;
 }
 /**General End**/
+/**General input **/
+/**Remove the arrows in the input field**/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/**General input end**/
 /**NavBar Start**/
 header{
     position: relative;
@@ -336,45 +351,153 @@ footer section .horizontal-rule{
     margin-bottom: 0;
 }
 /**End Our Project**/
-/**Login Page**/
+/**Login Page &&& Sign Up Page**/
 .login-header{
     height: 25%;
     width: 100%;
     background-color: #6CADDF;
     padding: 15px 0 50px 0;
 }
-.login{
-    width: 50%;
+#login .main-content,#sign-up .main-content{
+    width: 40%;
     height: 50%;
     padding: 25px;
     margin: 10px auto;
     border-radius: 5px;
     background-color: white;
+    position: relative;
     z-index: 3;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.25);
 }
-.login h3{
+#login .main-content h3,#sign-up .main-content h3{
     text-align: center;
 }
-.login .form-group{
+#login .main-content .form-group,#sign-up .main-content .form-group{
     margin: 10px 0 10px;
     width: 100%;
 }
-.login button{
+#login .main-content button,#sign-up .main-content button{
     width: 100%;
     margin-top: 15px;
-    background-color: #4d6585;
-    
+    background-color: #0082e6;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+#login .main-content button:hover,#sign-up .main-content button:hover{
+    background-color: #0069d9;
+    box-shadow: none;
 }
 .bg-img{
-    background: url('../images/background-6CADDF.png') repeat-x;
+    background-color: #6CADDF ;
     width: 100%;
     height: 100px;
-    float: left;
     position: absolute;
     z-index: -1;
 }
-/**Login Page End**/
+#sign-up .main-content{
+    width: 60%;
+}
+/**Login Page End &&& Sign Up Page End**/
+
+/**Cost Estimator PAge**/
+#cost-estimator .container-flex{
+    position: relative;
+    background-color: #808080;
+}
+#cost-estimator .container-flex .cost-header{
+    position: absolute;
+    bottom: 15px;
+    color: #ffffff;
+}
+#cost-estimator .container-flex img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+#cost-estimator .cost-input{
+    width:100%;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+#cost-estimator .cost-input input{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 20px 0 10px;
+    border: none;
+    outline: none;
+}
+#cost-estimator .cost-input .cost-label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;     /*To the any click event on pointer*/
+    border-bottom: 1px solid #595f6e;
+    color: #595f6e;
+}
+#cost-estimator .cost-input .cost-label::after{
+    content:"";
+    position:absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0069d9;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+}
+#cost-estimator .cost-input .label-name{
+    position: absolute;
+    bottom:5px;
+    left:0px;
+    transition: transform 300ms ease;
+}
+#cost-estimator .cost-input input:focus + .cost-label .label-name,
+#cost-estimator .cost-input input:valid + .cost-label .label-name
+{
+    transform:translateY(-100%);
+    font-size: 14px;
+    color:#0069d9 ;
+}
+#cost-estimator .cost-input input:focus + label::after,
+#cost-estimator .cost-input input:valid + label::after{
+    transform: translateX(0%);
+}
+#cost-estimator #form-container{
+    padding: 30px 0;
+}
+#cost-estimator .container #estimate-btn{
+    width: 100%;
+    border-radius: 0px;
+    box-shadow:5px 5px 3px rgba(0,0,0,.25 )  ;
+    margin-top: 10px;
+}
+#cost-estimator .container #estimate-btn:hover{
+    box-shadow:none ;
+}
+#cost-estimator #cost-form,#cost-estimator #form-main{
+    padding:30px;
+}
+#cost-estimator #form-main{
+    position: relative;
+    z-index: 3;
+    box-shadow: 1px 1px 5px  rgba(0,0,0,.25 );
+    margin-top: 15px;
+}
+#cost-estimator #result{
+    padding: 30px;
+    margin:15px auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 2px 2px 2px  rgba(0,0,0,.25 );
+}
+/**Cost Estimator Page End**/
+
 /********** Devices with max-width 1500px **********/
 @media (min-width:1200px){
     /**Home Page**/    
@@ -393,6 +516,9 @@ footer section .horizontal-rule{
         width: 20%;
     }
     /**End Home Page**/
+    /**Login Page &&& Sign Up Page**/
+    
+    /**Login Page End &&& Sign Up Page End**/
 }
 /********** Devices with max-width 1199px **********/
 @media (min-width:992px) and (max-width: 1199px){
@@ -420,6 +546,11 @@ footer section .horizontal-rule{
     }
 
     /**End Home Page**/
+    /**Login Page &&& Sign Up Page**/
+    #login .main-content{
+        width: 50%;
+    }
+    /**Login Page End &&& Sign Up Page End**/
     /** Footer  **/
     
     /** End Footer  **/
@@ -445,6 +576,14 @@ footer section .horizontal-rule{
         right:10%;
     }
     /**End Home Page**/
+    /**Login Page &&& Sign Up Page**/
+    #login .main-content{
+        width: 60%;
+    }
+    #sign-up .main-content{
+        width: 80%;
+    }
+    /**Login Page End &&& Sign Up Page End**/
     /** Footer  **/
     footer section .horizontal-rule{
         margin-left: 0;
@@ -483,6 +622,11 @@ footer section .horizontal-rule{
         margin:30px auto 0; 
     }
     /**End Home Page**/
+    /**Login Page &&& Sign Up Page**/
+    #login .main-content,#sign-up .main-content{
+        width: 100%;
+    }
+    /**Login Page End &&& Sign Up Page End**/
     
     /** Footer  **/
     footer{
@@ -617,3 +761,41 @@ header
     right:10%;
 }
 /**End Home Page**/
+/**Why Us Page**/
+#why-us .container-flex{
+    position: relative;
+}
+
+#why-us .container-flex .container #why-us-header{
+    position: absolute;
+    bottom: 10px;
+    color: #ffffff;
+}
+#why-us .card-main-div{
+    margin:30px auto 0;
+}
+#why-us .card-main-div .card{
+    border-radius: 10px;
+    padding: 20px;
+}
+#why-us .card-main-div .card-title{
+    padding: 20px;
+    margin: 0;
+}
+#why-us .card-main-div .card-image{
+    text-align: center;
+}
+#why-us .card-main-div .card-image img{
+    width: 100px;
+    height: 100px;
+}
+#why-us .card-main-div .card-body{
+    padding-left: 0;
+}
+#why-us .container{
+    margin-bottom: 30px;
+}
+#why-us .card ul{
+    list-style-type: square;
+}
+/**Why Us Page Ends**/
