@@ -29,6 +29,61 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.main-input-div{
+    width:100%;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+ .main-input-div input{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 20px 0 10px;
+    border: none;
+    outline: none;
+}
+.main-input-div label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;     /*To the any click event on pointer*/
+    border-bottom: 1px solid #595f6e;
+    color: #595f6e;
+}
+ .main-input-div label::after{
+    content:"";
+    position:absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0069d9;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+}
+ .main-input-div span{
+    position: absolute;
+    bottom:5px;
+    left:0px;
+    transition: transform 300ms ease;
+}
+ .main-input-div input:focus + label span,
+ .main-input-div input:valid + label span
+{
+    transform:translateY(-100%);
+    font-size: 14px;
+    color:#0069d9 ;
+}
+
+.main-input-div input:focus + label::after,
+.main-input-div input:valid + label::after
+{
+    transform: translateX(0%);
+}
 /**General input end**/
 /**General Button**/
 .btn-primary{
@@ -412,69 +467,12 @@ footer section .horizontal-rule{
     height: 100%;
     opacity: 0.7;
 }
-#cost-estimator .cost-input{
-    width:100%;
-    height: 60px;
-    position: relative;
-    overflow: hidden;
-}
-#cost-estimator .cost-input input{
-    width: 100%;
-    height: 100%;
-    color: black;
-    padding: 20px 0 10px;
-    border: none;
-    outline: none;
-}
-#cost-estimator .cost-input .cost-label{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;     /*To the any click event on pointer*/
-    border-bottom: 1px solid #595f6e;
-    color: #595f6e;
-}
-#cost-estimator .cost-input .cost-label::after{
-    content:"";
-    position:absolute;
-    left: 0px;
-    bottom: -1px;
-    width: 100%;
-    height: 100%;
-    border-bottom: 3px solid #0069d9;
-    transform: translateX(-100%);
-    transition: transform 300ms ease;
-}
-#cost-estimator .cost-input .label-name{
-    position: absolute;
-    bottom:5px;
-    left:0px;
-    transition: transform 300ms ease;
-}
-#cost-estimator .cost-input input:focus + .cost-label .label-name,
-#cost-estimator .cost-input input:valid + .cost-label .label-name
-{
-    transform:translateY(-100%);
-    font-size: 14px;
-    color:#0069d9 ;
-}
-#cost-estimator .cost-input input:focus + label::after,
-#cost-estimator .cost-input input:valid + label::after{
-    transform: translateX(0%);
-}
 #cost-estimator #form-container{
     padding: 30px 0;
 }
 #cost-estimator .container #estimate-btn{
     width: 100%;
-    border-radius: 0px;
-    box-shadow:5px 5px 3px rgba(0,0,0,.25 )  ;
     margin-top: 10px;
-}
-#cost-estimator .container #estimate-btn:hover{
-    box-shadow:none ;
 }
 #cost-estimator #cost-form,#cost-estimator #form-main{
     padding:30px;
