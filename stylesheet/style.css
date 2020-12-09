@@ -799,3 +799,99 @@ header
     list-style-type: square;
 }
 /**Why Us Page Ends**/
+/**Services Page**/
+#services .container-flex{
+    overflow: hidden;
+}
+#services .colorbox
+{
+    height: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#services .colorbox2
+{
+    background-color: #FA174F;
+
+}
+#services .colorbox3
+{
+    background-color: #528AEB;
+
+}
+#services .colorbox4
+{
+    background-color: #1AD973;
+
+}
+
+#services .colorbox5
+{
+    background-color: #E0D128;
+
+}
+
+#services .colorbox6
+{
+    background-color: #EBA067;
+
+}
+#services .boxtext
+{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 1.5rem;
+}
+#services .text-align-center
+{
+    text-align: center;
+}
+#services .ourser
+{
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+#services .headding1
+{
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+#services .head1
+{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+#services .thetext p
+{
+    font-size: 1.5rem;
+}
+#services .middle
+{
+    text-align: center;
+}
+#services .lightestbg
+{
+    background-color: #EEF5D7;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+#services .botmar1
+{
+    margin-bottom: 40px;
+}
+#services .colorbox a
+{
+    color: white;
+}
+/**Services Page ENd**/
