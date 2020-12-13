@@ -94,6 +94,13 @@ input[type=number] {
 .btn-primary:hover{
     box-shadow:none ;
 }
+.btn-primary .bi-arrow-right-short{
+    margin-top:-3px;
+    transition: transform 350ms ease;
+}
+.btn-primary:hover .bi-arrow-right-short{
+    transform: translate(50%);
+}
 /**General Button Ends**/
 /**NavBar Start**/
 header{
@@ -260,6 +267,7 @@ footer section .horizontal-rule{
     z-index: 100;
     margin-left: auto;
     margin-right: auto;
+    border:none;
 }
 .carousel-item .card:hover{
     box-shadow: none;
@@ -280,6 +288,9 @@ footer section .horizontal-rule{
 .carousel-item .card img{
     width: 100%;
     height: 250px;
+}
+.carousel-inner{
+    padding:10px 0;
 }
 .carousel-control-prev-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
@@ -377,6 +388,17 @@ footer section .horizontal-rule{
 }
 #our-projects-home #view-all-projects a:hover,#why-us-home #more-info a:hover,#services-home #view-all-services a:hover{
     color: #0069d9;
+}
+#view-all-services a .bi-arrow-right-short,
+#more-info a .bi-arrow-right-short,
+#view-all-projects a .bi-arrow-right-short{
+    margin-top:-3px;
+    transition: transform 350ms ease;
+}
+#view-all-services a:hover .bi-arrow-right-short,
+#more-info a:hover .bi-arrow-right-short,
+#view-all-projects a:hover .bi-arrow-right-short{
+    transform: translate(50%);
 }
 /**End Home Page**/
 /**Our Projects**/
