@@ -22,6 +22,14 @@ $('.carousel .carousel-item').each(function(){
       }
 });
 /*Code for Sild Show ends*/
+/**Code to pick time */
+$('#prefered-time').timepicker({
+  minTime: '10',
+  maxTime: '6:00pm',
+  defaultTime: '10',
+  scrollbar: true
+});
+/*Code to pick time */
 /**Cost Estimator Code */
 var costForm=document.getElementById("cost-form");
 if(costForm!=null){
