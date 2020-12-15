@@ -789,17 +789,29 @@ header
 }
 #why-us .card-main-div{
     margin:30px auto 0;
+    height: 300px;
 }
 #why-us .card-main-div .card{
     border-radius: 10px;
     padding: 20px;
+    height: 100%;
+    box-shadow: 1px 1px 6px  rgba(0,0,0,.25);
+}
+#why-us .card-main-div .card .row{
+    padding-top: 15px;
 }
 #why-us .card-main-div .card-title{
     padding: 20px;
     margin: 0;
 }
+#why-us .card-main-div .card-title::before{
+    content: '\27AB';
+    color: #0069d9;
+    margin-right: 10px;
+}
 #why-us .card-main-div .card-image{
     text-align: center;
+    padding-right:0 ;
 }
 #why-us .card-main-div .card-image img{
     width: 100px;
@@ -807,12 +819,25 @@ header
 }
 #why-us .card-main-div .card-body{
     padding-left: 0;
+    padding-top: 0;
+    padding-bottom:0 ;
 }
 #why-us .container{
     margin-bottom: 30px;
 }
 #why-us .card ul{
-    list-style-type: square;
+    list-style:none;
+    padding-left: 20px;
+}
+#why-us .card li::before{
+    content: "\2692";
+    color:  #0069d9;
+    display: inline-block;
+    font-weight: bold;
+    width: 1em;
+    font-size: 1.25em;
+    margin-left: -25px;
+    margin-right: 5px;
 }
 /**Why Us Page Ends**/
 /**Services Page**/

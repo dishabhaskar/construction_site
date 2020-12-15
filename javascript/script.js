@@ -33,8 +33,8 @@ if(costForm!=null){
     var breadth=document.getElementById("breadth").value;
     var floor=document.getElementById("floor").value;
     var area=length*breadth;
-    var lowerValue=999*area*floor;
-    var higherValue=2999*area*floor;
+    var lowerValue=1799*area*floor;
+    var higherValue=2299*area*floor;
     cost.innerHTML=""+lowerValue+"-"+higherValue;
     result.style.display="block";
   });
