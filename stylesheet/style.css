@@ -5,11 +5,11 @@
 }
 a{
     text-decoration: none;
-    color: #000000;
+    color: #0069d9;
 }
 a:hover{
+    color: #0a56a7;
     text-decoration: none;
-    color: #000;
 }
 .main-content{
     position: relative;
@@ -958,3 +958,85 @@ header
     text-align: center;
 }
 /**Register Page End**/
+/**My account Page**/
+#myAccount{
+    margin-top:30px;
+    margin-bottom:60px;
+}
+#myAccount .details-body{
+    margin: 30px auto;
+    position: relative;
+    z-index: 1;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.25 );
+    padding:30px 50px 50px;
+}
+#myAccount .details-body  .edit-div{
+    width: 50px;
+    height: 20px;
+    float: right;
+}
+#myAccount .details-body .info-main{
+    margin-top: 30px;
+}
+#myAccount .details-body #edit-account-info{
+    color: #0069d9;
+    display:inline-block;
+    transition: transform 350ms ease;
+}
+#myAccount .details-body #edit-account-info:hover{
+    transform: scale(1.1);
+}
+#myAccount .details-body label{
+    color: #0069d9;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+#myAccount .details-body .info-div{
+    position: relative;
+    width: 100%;
+    height:45px;
+    padding-bottom:50px ;
+}
+#myAccount .details-body .label-contents{
+    position: absolute;
+    bottom: 5px;
+}
+#myAccount .details-body #forgot-password:hover{
+    text-decoration: underline;
+}
+#myAccount .details-body .account-info hr{
+    margin-top: 50px;
+}
+#myAccount .details-body .requested-services-div{
+    width: 100%;
+    cursor: pointer;
+    transition: display 350ms ease;
+}
+#myAccount .details-body .requested-services-div hr{
+    margin:0;
+}
+#myAccount .details-body .requested-services-dropdown:hover,#myAccount .details-body .requested-services .active{
+    background-color: #e7f5fd;
+}
+#myAccount .details-body .requested-services-dropdown{
+    padding: 15px 0;
+    border-radius:5px 5px 0 0;
+    color:#0a56a7;
+}
+#myAccount .details-body .requested-services-dropdown .bi-caret-down-fill,#myAccount .details-body .requested-services-dropdown span{
+    pointer-events: none; 
+}
+#myAccount .details-body .requested-services-dropdown .bi-caret-down-fill{
+    margin:3px 10px 0px 10px;
+    transition: transform 350ms ease;
+}
+#myAccount .details-body .requested-services-div .service-contents{
+    display: none;
+    padding: 5px;
+    background-color: #f5fafd;
+    border-radius: 0 0 5px 5px;
+}
+#myAccount .details-body .requested-services-dropdown .service-active{
+    color: #4cf708;
+}
+/**My account Page End**/
