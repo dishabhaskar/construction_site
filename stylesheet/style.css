@@ -3,6 +3,10 @@
     font-family: 'Ubuntu', sans-serif;
     
 }
+html{
+    height: 100%;
+    width: 100%;
+}
 a{
     text-decoration: none;
     color: #0069d9;
@@ -426,25 +430,41 @@ footer section .horizontal-rule{
 }
 /**End Our Project**/
 /**Login Page &&& Sign Up Page**/
-.login-header{
-    height: 25%;
+#login-body,#sign-up-body{
     width: 100%;
-    background-color: #6CADDF;
-    padding: 15px 0 50px 0;
-}
-#login .main-content,#sign-up .main-content{
-    width: 40%;
-    height: 50%;
-    padding: 25px;
-    margin: 10px auto;
-    border-radius: 5px;
-    background-color: white;
+    height: 100%;
     position: relative;
-    z-index: 3;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.25);
 }
-#login .main-content h3,#sign-up .main-content h3{
-    text-align: center;
+#login-body img,#sign-up-body img{
+    width: 100%;
+    height: 100%;
+}
+#login-body #login .main-content,#sign-up-body #sign-up .main-content{
+    width:400px;
+    height: 450px;
+    padding: 40px 25px 25px 60px;
+    border-radius: 5px;
+    background-color:transparent;
+    border-left: 1px solid black;
+    position: absolute;
+    bottom:20%;
+    left: 55%;
+}
+#sign-up-body #sign-up .main-content .title-name,#login-body #login .main-content .title-name{
+    color: #0069d9;
+}
+#sign-up-body #sign-up .main-content{
+    bottom:10%;
+    height: 550px;
+    padding: 10px 25px 25px 60px;
+
+}
+#login-body #login .main-content input,#sign-up-body #sign-up .main-content input{
+    background-color: transparent;
+}
+#login-body #login .main-content .main-input-div label,#sign-up-body #sign-up .main-content .main-input-div label{
+    color: black;
+    border-bottom: 1px solid black;
 }
 #login .main-content .form-group,#sign-up .main-content .form-group{
     margin: 10px 0 10px;
@@ -452,25 +472,25 @@ footer section .horizontal-rule{
 }
 #login .main-content button,#sign-up .main-content button{
     width: 100%;
-    margin-top: 15px;
-    background-color: #0082e6;
-    position: relative;
-    z-index: 3;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-}
-#login .main-content button:hover,#sign-up .main-content button:hover{
-    background-color: #0069d9;
-    box-shadow: none;
-}
-.bg-img{
-    background-color: #6CADDF ;
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    z-index: -1;
+    margin-top: 20px;
 }
 #sign-up .main-content{
     width: 60%;
+}
+@media (max-width:1000px) and (min-width:768px){
+    #login-body #login .main-content,#sign-up-body #sign-up .main-content{
+        left: 40%;
+    }
+}
+@media (max-width:767px) and (min-width:576px){
+    #login-body #login .main-content,#sign-up-body #sign-up .main-content{
+        left: 20%;
+    }
+}
+@media (max-width:576px){
+    #login-body #login .main-content,#sign-up-body #sign-up .main-content{
+        left: 10%;
+    }
 }
 /**Login Page End &&& Sign Up Page End**/
 
