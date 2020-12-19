@@ -439,22 +439,24 @@ footer section .horizontal-rule{
     width: 100%;
     height: 100%;
 }
+
 #login-body #login .main-content,#sign-up-body #sign-up .main-content{
-    width:400px;
+    width:30%;
     height: 450px;
     padding: 40px 25px 25px 60px;
     border-radius: 5px;
     background-color:transparent;
     border-left: 1px solid black;
     position: absolute;
-    bottom:20%;
+    top:10%;
+    bottom:10%;
     left: 55%;
 }
 #sign-up-body #sign-up .main-content .title-name,#login-body #login .main-content .title-name{
     color: #0069d9;
 }
 #sign-up-body #sign-up .main-content{
-    bottom:10%;
+    top:10%;
     height: 550px;
     padding: 10px 25px 25px 60px;
 
@@ -477,19 +479,43 @@ footer section .horizontal-rule{
 #sign-up .main-content{
     width: 60%;
 }
+@media(max-height:570px){
+    #login-body,#sign-up-body{
+        background: url('../images/login-bg-larger.png') no-repeat;
+        background-size: auto;
+    }
+    #login-body img,#sign-up-body img{
+        display: none;
+    }
+    #login-body #login .main-content,#sign-up-body #sign-up .main-content{
+        top:0;
+        border:none;
+    }
+}
+@media (max-width:1200px) and (min-width:1000px){
+    #login-body #login .main-content,#sign-up-body #sign-up .main-content{
+        left: 40%;
+        width: 40%;
+    }
+}
 @media (max-width:1000px) and (min-width:768px){
     #login-body #login .main-content,#sign-up-body #sign-up .main-content{
         left: 40%;
+        width: 45%;
     }
 }
-@media (max-width:767px) and (min-width:576px){
+@media (max-width:768px) and (min-width:576px){
     #login-body #login .main-content,#sign-up-body #sign-up .main-content{
         left: 20%;
+        width: 60%;
+        border:none;
     }
 }
 @media (max-width:576px){
     #login-body #login .main-content,#sign-up-body #sign-up .main-content{
         left: 10%;
+        width: 70%;
+        border:none;
     }
 }
 /**Login Page End &&& Sign Up Page End**/
