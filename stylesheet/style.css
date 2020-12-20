@@ -48,6 +48,9 @@ input[type=number] {
     border: none;
     outline: none;
 }
+.main-input-div input:focus{
+    color: #000000;
+}
 .main-input-div label{
     position: absolute;
     bottom: 0px;
@@ -1085,3 +1088,26 @@ footer section .horizontal-rule{
     color: #4cf708;
 }
 /**My account Page End**/
+/** Change Password**/
+#change-password .error{
+    color: #f83333;
+    margin: -15px 0 0 0;
+    display: none;
+    font-style: italic;
+}
+#change-password{
+    margin-top:60px;
+    margin-bottom:60px;
+}
+#change-password .form-body{
+    margin: 30px auto;
+    position: relative;
+    z-index: 1;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.25 );
+    padding:30px 50px 50px;
+}
+#change-password form #register-btn{
+    text-align: center;
+    width: 100%;
+}
+/** Change Password End**/
