@@ -30,8 +30,8 @@
                 </a>
                 <!--Collapsed Toggle Button-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!--Div with Nav Buttons Starts-->
@@ -54,8 +54,7 @@
                             <!--Service Dropdown Button-->
                             <a class="nav-link dropdown-toggle" id="serviceDropdown" href="#" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                            <div class="dropdown-menu" id="serviceDropdownContents"
-                                aria-labelledby="serviceDropdown">
+                            <div class="dropdown-menu" id="serviceDropdownContents" aria-labelledby="serviceDropdown">
                                 <a href="#" class="dropdown-item">Carpetery</a>
                                 <a href="#" class="dropdown-item">Electrical</a>
                                 <a href="#" class="dropdown-item">Flooring</a>
@@ -113,54 +112,54 @@
         <div id="form-container" class="container">
             <!--Main Content of any page comes here-->
             <div id="form-main">
-            <h4 id="cost-heading">Fill the details to approximate the cost of construction</h4>
-            <span id="dim-input-note">Please enter the Length in Ft.</span>
-            <form id="cost-form"class="row" action="none">
-                <div class="col-md-6">
-                  <div class="main-input-div">
-                    <input id="breadth" type="number" autocomplete="off" name="breadth" required \>
-                    <label for="breadth" class="cost-label">
-                      <span class="label-name">
-                        Breadth Of the site(ft)*
-                      </span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="main-input-div">
-                    <input id="length"type="number" autocomplete="off" name="length" required \>
-                    <label for="length" class="cost-label">
-                      <span class="label-name">
-                        Length Of the Site(ft)*
-                      </span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="main-input-div">
-                    <input id="floor" type="number" autocomplete="off" name="floor" required \>
-                    <label for="floor" class="cost-label">
-                      <span class="label-name">
-                        No of Floors*
-                      </span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <button id="estimate-btn" class="btn btn-primary" type="submit">Estimate
-                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-right-short"
-                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                    </svg>
-                  </button>
-                </div>
-            </form>
+                <h4 id="cost-heading">Fill the details to approximate the cost of construction</h4>
+                <span id="dim-input-note">Please enter the Length in Ft.</span>
+                <form id="cost-form" class="row" action="none">
+                    <div class="col-md-6">
+                        <div class="main-input-div">
+                            <input id="breadth" type="number" autocomplete="off" name="breadth" required \>
+                            <label for="breadth" class="cost-label">
+                                <span class="label-name">
+                                    Breadth Of the site(ft)*
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="main-input-div">
+                            <input id="length" type="number" autocomplete="off" name="length" required \>
+                            <label for="length" class="cost-label">
+                                <span class="label-name">
+                                    Length Of the Site(ft)*
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="main-input-div">
+                            <input id="floor" type="number" autocomplete="off" name="floor" required \>
+                            <label for="floor" class="cost-label">
+                                <span class="label-name">
+                                    No of Floors*
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <button id="estimate-btn" class="btn btn-primary" type="submit">Estimate
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-right-short"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
             <div id="result" class="col-md-9 blue-background">
                 <h3>Cost Approximate</h3><br>
                 <h5>Rs.<span id="cost"></span>*</h5><br>
-                <span  class="">*Please note that this a approxiation.For more detailed cost click Here!</span><br>
+                <span class="">*Please note that this a approxiation.For more detailed cost click Here!</span><br>
                 <button type="button" class="btn btn-primary">
                     Lets Build
                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-right-short"

@@ -518,6 +518,12 @@ footer section .horizontal-rule{
         border:none;
     }
 }
+#login-body #login .main-content .error,#sign-up-body #sign-up .main-content .error{
+    color: #f83333;
+    margin: -15px 0 0 0;
+    display: none;
+    font-style: italic;
+}
 /**Login Page End &&& Sign Up Page End**/
 
 /**Cost Estimator PAge**/

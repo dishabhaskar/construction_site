@@ -13,14 +13,22 @@
                 <h2>Welcome !</h2>
                 <h5>To <span class="title-name">Pinnacle Contructions</span></h5>
                 <h6>Sign in to start building your dream!</h6>
-                <form>
+                <form id="login-form" action="home.html" method="GET">
                     <div class="form-group main-input-div">
-                        <input type="email" class="form-control" required>
+                        <input id="email-input" autocomplete="off" type="text" class="form-control" required oninvalid="this.setCustomValidity('Please Enter Email!')"
+                        oninput="this.setCustomValidity('')">
                         <label><span class="label-name">Email address</span></label>
                     </div>
+                    <div id="email-error" class="form-group error">
+                        <span>Please Enter valid Email!</span>
+                    </div>
                     <div class="form-group main-input-div">
-                        <input type="password" class="form-control" required>
+                        <input id="password-input" autocomplete="off" type="password" class="form-control" required oninvalid="this.setCustomValidity('Please Enter Password!')"
+                        oninput="this.setCustomValidity('')">
                         <label><span class="label-name">Password</span></label>
+                    </div>
+                    <div id="password-error" class="form-group error">
+                        <span>Please Enter valid Password!</span>
                     </div>
                     <div class="form-group">
                         <a href="#">Forgot Password?</a>
@@ -28,7 +36,7 @@
                     <div class="form-group">
                         <a href="#" class="float-right">Need to register?</a>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button id="login-submit" type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
