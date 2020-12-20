@@ -54,7 +54,6 @@ if(myRequestedServices!=null){
   var i;
   for(i=0;i<myRequestedServices.length;i++){
     myRequestedServices[i].addEventListener("click",function(event){
-      console.log(event);
       var arrow=event.target.children[0];
       this.classList.toggle("active");
       var content = this.nextElementSibling.nextElementSibling;
@@ -69,3 +68,58 @@ if(myRequestedServices!=null){
   }
 }
 /**Code for my account dropdown End*/
+/**COde for email and password validation */
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  console.log("inside valid email ? "+re.test(email));
+  return re.test(email);
+}
+function validatePassword(password){
+  console.log("inside validate password")
+  const passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+  if(password.length<8){
+    return false;
+  }
+  return passw.test(password);
+}
+function validateSubmission(event){
+  var emailInput=document.getElementById("email-input");
+  var emailError=document.getElementById("email-error");
+  var email=emailInput.value;
+  if(!validateEmail(email)){
+    event.preventDefault();
+    emailError.style.display="block";
+  }else if(emailError.style.display=="block"){
+    emailError.style.display="none";
+  }
+  var passwordInput=document.getElementById("password-input");
+  var passwordError=document.getElementById("password-error");
+  console.log(passwordError);
+  var password=passwordInput.value;
+  if(!validatePassword(password)){
+    event.preventDefault();
+    passwordError.style.display="block";
+  }else if(passwordError.style.display=="block"){
+    passwordError.style.display="none";
+  }
+  var confirmPasswordInput=document.getElementById("confirm-password-input");
+  if(confirmPasswordInput!=null){
+    var confirmPassword=confirmPasswordInput.value;
+    var confirmPasswordError=document.getElementById("confirm-password-error");
+    if(confirmPassword!=password){
+      event.preventDefault();
+      confirmPasswordError.style.display="block";
+    }else if(confirmPasswordError.style.display=="block"){
+      confirmPasswordError.style.display="none";
+    }
+  }
+}
+var loginSubmit=document.getElementById("login-form");
+var signUpSubmit=document.getElementById("sign-up-form");
+if(loginSubmit!=null){
+  loginSubmit.addEventListener('submit',validateSubmission);
+}
+if(signUpSubmit!=null){
+  signUpSubmit.addEventListener('submit',validateSubmission);
+}
+/**COde for email and password validation ENd*/
