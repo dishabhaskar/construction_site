@@ -83,34 +83,49 @@ function validatePassword(password){
   return passw.test(password);
 }
 function validateSubmission(event){
+  console.log("inside confirm");
   var emailInput=document.getElementById("email-input");
-  var emailError=document.getElementById("email-error");
-  var email=emailInput.value;
-  if(!validateEmail(email)){
-    event.preventDefault();
-    emailError.style.display="block";
-  }else if(emailError.style.display=="block"){
-    emailError.style.display="none";
+  if(emailInput!=null){
+    var emailError=document.getElementById("email-error");
+    var email=emailInput.value;
+    if(!validateEmail(email)){
+      event.preventDefault();
+      emailError.style.display="block";
+    }else if(emailError.style.display=="block"){
+      emailError.style.display="none";
+    }
   }
   var passwordInput=document.getElementById("password-input");
-  var passwordError=document.getElementById("password-error");
-  console.log(passwordError);
-  var password=passwordInput.value;
-  if(!validatePassword(password)){
-    event.preventDefault();
-    passwordError.style.display="block";
-  }else if(passwordError.style.display=="block"){
-    passwordError.style.display="none";
-  }
-  var confirmPasswordInput=document.getElementById("confirm-password-input");
-  if(confirmPasswordInput!=null){
-    var confirmPassword=confirmPasswordInput.value;
-    var confirmPasswordError=document.getElementById("confirm-password-error");
-    if(confirmPassword!=password){
+  if(passwordInput!=null){
+    var passwordError=document.getElementById("password-error");
+    var password=passwordInput.value;
+    if(!validatePassword(password)){
       event.preventDefault();
-      confirmPasswordError.style.display="block";
-    }else if(confirmPasswordError.style.display=="block"){
-      confirmPasswordError.style.display="none";
+      passwordError.style.display="block";
+    }else if(passwordError.style.display=="block"){
+      passwordError.style.display="none";
+    }
+    var confirmPasswordInput=document.getElementById("confirm-password-input");
+    if(confirmPasswordInput!=null){
+      var confirmPassword=confirmPasswordInput.value;
+      var confirmPasswordError=document.getElementById("confirm-password-error");
+      if(confirmPassword!=password){
+        event.preventDefault();
+        confirmPasswordError.style.display="block";
+      }else if(confirmPasswordError.style.display=="block"){
+        confirmPasswordError.style.display="none";
+      }
+    }
+  }
+  var oldPasswordInput=document.getElementById("old-password-input");
+  if(oldPasswordInput!=null){
+    var oldPasswordError=document.getElementById("old-password-error");
+    var password=oldPasswordInput.value;
+    if(!validatePassword(password)){
+      event.preventDefault();
+      oldPasswordError.style.display="block";
+    }else if(oldPasswordError.style.display=="block"){
+      oldPasswordError.style.display="none";
     }
   }
 }
@@ -121,5 +136,10 @@ if(loginSubmit!=null){
 }
 if(signUpSubmit!=null){
   signUpSubmit.addEventListener('submit',validateSubmission);
+}
+var changePasswordSubmit=document.getElementById("change-password-form");
+if(changePasswordSubmit!=null){
+  console.log("inside confirm");
+  changePasswordSubmit.addEventListener('submit',validateSubmission);
 }
 /**COde for email and password validation ENd*/
