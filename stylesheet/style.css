@@ -726,7 +726,7 @@ footer section .horizontal-rule{
 }
 
 /**How it works**/
-.rise ul li
+#hiw .rise ul li
 {
     
     font-size:30px;
@@ -734,37 +734,48 @@ footer section .horizontal-rule{
     color: #0069d9;
     line-height: 2px;
 }
-
-.rise ul h1
+#hiw .imgwtxt{
+    position: relative;
+}
+#hiw .imgwtxt img{
+    background-color: #808080;
+    opacity: 0.7;
+}
+#hiw .imgwtxt h2{
+    position: absolute;
+    bottom: 2%;
+    color: #fff;
+}
+#hiw .rise ul h1
 {
     color: black;
     font-size: 30px;
 
 } 
-.imgm
+#hiw .imgm
 {
     margin-top: 60px;
     margin-bottom: 60px;
 }
-.ptm
+#hiw .ptm
 {
     padding-top: 30px;
 }
-.ptm ul 
+#hiw .ptm ul 
 {
     list-style: square;
     color: #0069d9;
 }
-.ptm ul li p
+#hiw .ptm ul li p
 {
     color: black;
 }
-.c1
+#hiw .c1
 {
     position: absolute;
     top: 50%;
 }
-.ort .ort1
+#hiw .ort .ort1
 {
     background-color:#0069d9;
     text-align: center;
@@ -772,24 +783,24 @@ footer section .horizontal-rule{
     margin: auto;
     margin-bottom:30px;
 }
-.ort .ort1 h1
+#hiw .ort .ort1 h1
 {
     font-size: 20px;
     padding: 10px 10px 10px 10px;
     color: white;
 }
-.tpor
+#hiw .tpor
 {
     margin-top: 80px;
 }
-.bull
+#hiw .bull
 {
     border: 2px solid #0069d9;
     padding:1px 3px 1px 3px;
     border-radius: 100px;
 
 }
-header
+#hiw header
 {
     position: sticky !important;
 }
@@ -801,11 +812,11 @@ header
     }
 
 }
-.ort .ort1
+#hiw .ort .ort1
 {
     border-radius: 10px;
 }
-.imgontxt
+#hiw .imgontxt
 {
     padding-left: 80px;
     padding-top: 40px;
@@ -813,12 +824,12 @@ header
     position: static;
     
 }
-.imgontxt p
+#hiw .imgontxt p
 {
     font-size: 70px;
     font-family:'Castoro', serif;
 }
-.imgontxt h6
+#hiw .imgontxt h6
 {
    font-size: 25px;
 }
