@@ -1087,6 +1087,12 @@ footer section .horizontal-rule{
 #myAccount .details-body .requested-services-dropdown .service-active{
     color: #4cf708;
 }
+#myAccount .details-body .requested-services-dropdown .service-declined{
+    color: #fa4545;
+}
+#myAccount .details-body .requested-services-dropdown .service-closed{
+    color: #808080;
+}
 /**My account Page End**/
 /** Change Password**/
 #change-password .error{

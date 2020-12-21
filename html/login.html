@@ -14,10 +14,10 @@
                 <h2>Welcome !</h2>
                 <h5>To <span class="title-name"><a href="../home.html">Pinnacle Contructions</a></span></span></h5>
                 <h6>Sign in to start building your dream!</h6>
-                <form id="login-form" action="home.html" method="GET">
+                <form id="login-form" action="../home.html" method="GET">
                     <div class="form-group main-input-div">
                         <input id="email-input" autocomplete="off" type="text" class="form-control" required oninvalid="this.setCustomValidity('Please Enter Email!')"
-                        oninput="this.setCustomValidity('')">
+                        oninput="this.setCustomValidity('')" onkeyup="removeEmailError()">
                         <label><span class="label-name">Email address</span></label>
                     </div>
                     <div id="email-error" class="form-group error">
@@ -25,7 +25,7 @@
                     </div>
                     <div class="form-group main-input-div">
                         <input id="password-input" autocomplete="off" type="password" class="form-control" required oninvalid="this.setCustomValidity('Please Enter Password!')"
-                        oninput="this.setCustomValidity('')">
+                        oninput="this.setCustomValidity('')" onkeyup="removePasswordError()">
                         <label><span class="label-name">Password</span></label>
                     </div>
                     <div id="password-error" class="form-group error">

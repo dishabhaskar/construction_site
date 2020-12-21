@@ -40,14 +40,31 @@ if(costForm!=null){
   });
 }
 /**Cost Estimator Code End */
-/**Code to pick time */
+/**Code to pick time & date */
 $('#prefered-time').timepicker({
   minTime: '10',
   maxTime: '6:00pm',
   defaultTime: '10',
   scrollbar: true
 });
-/*Code to pick time End*/
+var preferedDate=document.getElementById("prefered-date");
+if(preferedDate!=null){
+  var today = new Date();
+  var dd = today.getDate()+1;
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
+  //prefixing zero to single digit numbers
+  if(dd<10){
+      dd='0'+dd
+  } 
+  if(mm<10){
+      mm='0'+mm
+  }
+  today = yyyy+'-'+mm+'-'+dd;
+  preferedDate.setAttribute('min',today);
+  preferedDate.setAttribute('value',today);
+}
+/*Code to pick time & date End*/
 /**Code for my account dropdown */
 var myRequestedServices=document.getElementsByClassName("requested-services-dropdown");
 if(myRequestedServices!=null){
@@ -142,4 +159,21 @@ if(changePasswordSubmit!=null){
   console.log("inside confirm");
   changePasswordSubmit.addEventListener('submit',validateSubmission);
 }
+
+function removePasswordError(){
+  var passwordError=document.getElementById("password-error");
+  if(passwordError.style.display=="block")
+    passwordError.style.display="none";
+}
+function removeEmailError(){
+  var emailError=document.getElementById("email-error");
+  if(emailError.style.display=="block")
+    emailError.style.display="none";
+}
+function removeConfirmPasswordError(){
+  var confirmPasswordError=document.getElementById("confirm-password-error");
+  if(confirmPasswordError.style.display=="block")
+    confirmPasswordError.style.display="none";
+}
+
 /**COde for email and password validation ENd*/

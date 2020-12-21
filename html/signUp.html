@@ -15,36 +15,38 @@
                 <h5>To <span class="title-name"><a href="../home.html">Pinnacle Contructions</a></span></h5>
                 <h6>All Ready Registered? Then <a href="login.html">Login</a> </h6>
                 <h6>Register to start building your dream!</h6>
-                <form id="sign-up-form" action="home.html" method="GET">
+                <form id="sign-up-form" action="../home.html" method="GET">
                     <div class="form-group main-input-div">
                         <input type="text" id="name" class="form-control" oninvalid="this.setCustomValidity('Please Enter Name!')"
                         oninput="this.setCustomValidity('')" required>
-                        <label><span>Name</span></label>
+                        <label><span>Name*</span></label>
                     </div>
                     <div class="form-group main-input-div">
                         <input type="tel" class="form-control" oninput="this.setCustomValidity('')" required>
-                        <label><span>Telephone</span></label>
+                        <label><span>Telephone*</span></label>
                     </div>
                     <div class="form-group main-input-div">
                         <input type="text" id="email-input" class="form-control" oninput="setCustomValidity('')" required oninvalid="this.setCustomValidity('Please Enter Email!')"
-                        oninput="this.setCustomValidity('')">
-                        <label><span>Email address</span></label>
+                        oninput="this.setCustomValidity('')" onkeyup="removeEmailError()">
+                        <label><span>Email address*</span></label>
                     </div>
                     <div id="email-error" class="form-group error">
                         <span>Please Enter valid Email!</span>
                     </div>
                     <div class="form-group main-input-div">
                         <input id="password-input" type="password" class="form-control" oninvalid="this.setCustomValidity('Please Enter Password!')"
-                        oninput="this.setCustomValidity('')" required>
-                        <label><span>Password</span></label>
+                        oninput="this.setCustomValidity('')" required onkeyup="removePasswordError()">
+                        <label><span>Password*</span></label>
                     </div>
                     <div id="password-error" class="form-group error">
-                        <span>Please Enter valid Password!</span>
+                        <span>Please Enter valid Password!</span><br>
+                        <span>-It must contain 1 uppercase and 1 numeric character</span><br>
+                        <span>-Minimum 8 characters</span>
                     </div>
                     <div class="form-group main-input-div">
                         <input id="confirm-password-input" type="password" class="form-control" oninvalid="this.setCustomValidity('Please Enter Password Again!')"
-                        oninput="this.setCustomValidity('')" required>
-                        <label><span>Confirm Password</span></label>
+                        oninput="this.setCustomValidity('')" required onkeyup="removeConfirmPasswordError()">
+                        <label><span>Confirm Password*</span></label>
                     </div>
                     <div id="confirm-password-error" class="form-group error">
                         <span>Re-entered password doesnot match!</span>
