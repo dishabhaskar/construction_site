@@ -247,7 +247,7 @@ footer section .horizontal-rule{
     bottom: 10%;
     font-size: 1.5em;
 }
-.jumbotron .container button{
+.jumbotron .container .btn-primary{
     position: absolute;
     bottom: 10%;
     right:10%;
@@ -591,7 +591,7 @@ footer section .horizontal-rule{
         bottom: 20%;
         font-size: 2em;
     }
-    .jumbotron .container button{
+    .jumbotron .container .btn-primary{
         bottom: 20%;
         right:10%;
         width: 20%;
@@ -620,7 +620,7 @@ footer section .horizontal-rule{
         bottom: 15%;
         font-size: 2em;
     }
-    .jumbotron .container button{
+    .jumbotron .container .btn-primary{
         bottom: 15%;
         right:10%;
         width: 15%;
@@ -652,7 +652,7 @@ footer section .horizontal-rule{
         bottom: 10%;
         font-size: 2em;
     }
-    .jumbotron .container button{
+    .jumbotron .container .btn-primary{
         bottom: 10%;
         right:10%;
     }
