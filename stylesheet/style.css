@@ -326,7 +326,7 @@ footer section .horizontal-rule{
 }
 
 /* display 3 */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
@@ -640,7 +640,7 @@ footer section .horizontal-rule{
     /** End Footer  **/
 }
 /****Devices of with max-width 991px ie. Medium Devices**/
-@media(max-width:991px){
+@media(max-width:991px)and (min-width:767px){
     /** NavBar**/
     .horizontal-rule{
         margin-left: -24px;
@@ -677,7 +677,7 @@ footer section .horizontal-rule{
     /** End Footer  **/
 }
 /****Devices of with max-width 767px ie. Small Devices **/
-@media(max-width:767px){
+@media(max-width:767px)and (min-width:576px){
     /** NavBar**/
     .horizontal-rule{
         margin-left: -18px;
@@ -716,15 +716,6 @@ footer section .horizontal-rule{
     footer{
         text-align: center;
     }
-    #infoFooter{
-        clear: left;
-    }
-    #siteNav{
-        float: left;
-    }
-    #aboutUs{
-        float: right;
-    }
     /** End Footer  **/
 }
 /****Devices of with max-width 575px ie. Extra Small devices**/
@@ -735,6 +726,38 @@ footer section .horizontal-rule{
         margin-right: 0;
     }
     /** End NavBar**/
+    /**Home Page**/    
+    .jumbotron .container .tag{
+        top: 20%;
+        font-size: 1.5em;
+    }
+    .jumbotron .container .accomp{
+        bottom: 30%;
+        font-size: 1em;
+    }
+    .jumbotron .container .btn-primary{
+        bottom: 5%;
+        width: 35%;
+    }
+    #why-us-home .row .card{
+        width: 60%;
+        height: 300px;
+        margin:30px auto 0;
+        
+    }
+    #why-us-home #more-info,#our-projects-home #view-all-projects{
+        margin-top: 30px;
+    }
+    #our-projects .row .card,#our-projects-home .row .card{
+        width: 80%;
+        margin:30px auto 0; 
+    }
+    /**End Home Page**/
+    /** Footer  **/
+    footer{
+        text-align: center;
+    }
+    /** End Footer  **/
 }
 
 /**How it works**/
